@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Hello Dosto, welcome to DevOps Zero To Hero (Junoon  Batch 9)'
+    return render_template('index.html')
 
 @app.route('/health')
 def health():
