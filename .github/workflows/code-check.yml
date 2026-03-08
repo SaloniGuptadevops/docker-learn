@@ -1,0 +1,20 @@
+name: Code Scan
+
+on: 
+  push:
+    branches: [main]
+
+jobs:
+  linter:
+    # server
+    runs-on: ubuntu-latest
+
+    steps:
+      # get the latest code in that server
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+     - name: setup python 3.12
+       uses: actions/setup-python@v5
+       with:
+         python-version: "3.12"
