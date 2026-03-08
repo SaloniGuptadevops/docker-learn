@@ -14,7 +14,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-     - name: setup python 3.12
-       uses: actions/setup-python@v5
-       with:
-         python-version: "3.12"
+      - name: setup python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: install linter flake 8
+        run: pip install flake8
+
+      - name: scan code for syntax
+        run: flake8 app.py
