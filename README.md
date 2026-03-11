@@ -15,6 +15,10 @@ Part of the [TrainWithShubham](https://github.com/TrainWithShubham) — DevOps Z
 - `/health` endpoint for ECS load balancer health checks
 - Two Dockerfiles — simple and multistage (distroless)
 
+# Day 1 Answers
+
+Just a simple answer
+
 ## Tech Stack
 
 | Component | Technology |
